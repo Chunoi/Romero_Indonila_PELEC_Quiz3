@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-j!=+%qg1xr46uz0zvdt-ekl4#+f&4i9to&8@613ih$#v2t+)!6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['yongieee2.pythonanywhere.com']
-CORS_ALLOWED_ORIGINS = ["https://yongieee2.pythonanywhere.com"]
+ALLOWED_HOSTS = ['*']
+CORS_ALLOWED_ORIGINS = []
 
 
 # Application definition
@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'task_backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3.backup',
     }
 }
 
